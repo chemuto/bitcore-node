@@ -1,0 +1,31 @@
+{
+  "network": "testnet",
+  "port": 3001,
+  "datadir": "/home/ubuntu/.bitcore",
+  "services": [
+    "p2p",
+    "db",
+    "header",
+    "block",
+    "mempool",
+    "address",
+    "transaction",
+    "timestamp",
+    "insight-api",
+    "web",
+    "bitcoind"
+  ],
+  "servicesConfig": {
+    "insight-api": {
+      "routePrefix": "api",
+      "disableRateLimiter": true,
+      "enableCache": true
+    },
+    "bitcoind": {
+      "spawn": {
+        "datadir": "/home/ubuntu/.bitcoin",
+        "exec": "bitcoind"
+      }
+    }
+  }
+}
