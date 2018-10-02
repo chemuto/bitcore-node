@@ -7,9 +7,6 @@
     "header",
     "block",
     "mempool",
-    "address",
-    "transaction",
-    "timestamp",
     "insight-api",
     "web",
     "bitcoind"
